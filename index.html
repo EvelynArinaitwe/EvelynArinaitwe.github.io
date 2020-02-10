@@ -1,0 +1,120 @@
+
+
+<html>
+
+        <head>
+                <meta charset="utf-8">
+                <title> Writing Guide</title>
+                <link rel="stylesheet" type="text/css" href="guide_style.css">
+              </head>
+
+<div class="main-body">
+<nav id="navbar">
+<header> Tips on writing a programming Book</header>
+<a href="#Introduction" class="nav-link">Introduction</a>
+<a href="#Checklist" class="nav-link">Before you start checklist</a>
+<a href="#Inspiration" class="nav-link">Inspiration</a>
+<a href="#Doubt" class="nav-link">Doubt</a>
+<a href="#Writing" class="nav-link">Writing</a>
+<a href="#Editting" class="nav-link">Editting</a>
+<a href="#Contact" class="nav-link">Contact</a>
+
+</nav>
+<main id="main-doc">
+<section class="main-section" id="Introduction">
+<header>Introduction</header>
+<p>In this guide, I want to go through the process of writing a book, to give others who are thinking of writing a general idea of what kinds of things you will need to do. This is the guide article I wish I had read before starting out. Some of this will be applicable to fiction writing, but there are better resources if that’s what you’re interested in. I can only share what I personally know.</p>
+
+</section>
+<section class="main-section" id="Checklist">
+<header>Before you start checklist</header>
+<p>Here’s a short list-based summary of many of the things I’ll discuss in this guide. These are all things to think about before you start writing and throughout the process:</p>
+<ol>
+<li>Do you have enough material for a book? Write out an outline to make sure. Iterate over it until it’s quite detailed.</li>
+<li>Quash self-doubt! If no one else has written this book, then it’s up to you!</li>
+<li> Do you want or need to go with self-publishing?</li>
+<li> Who will be your editor? (You do need one.)</li>
+<li>Should you do a print edition? What’s the market for that?</li>
+<li>When are you going to make the time to write?</li>
+<li> Do you have a place you can write uninterrupted?</li>
+<li>Will your family support the time commitment?</li>
+<li>Does your day job have a moonlighting policy? Follow it!</li>
+<li> When marketing your book, remember to Always Be Providing Value.</li>
+
+</ol>
+
+<p>Writing a book is not easy. Just because you know stuff does not mean you can write a book about it. But it is a prerequisite.</p>
+</section>
+<section class="main-section" id="Inspiration">
+<header>Inspiation</header>
+<p>At my day job at Andela, I’ve spent the last few years becoming something of an expert in the area of .NET performance. I wrote a very significant part of the Andela query-processing stack in .NET and performance is obviously a vital consideration in everything it does. I had the benefit of an amazing mentor (see my book’s acknowledgements [PDF]) for a number of years, and the experience we gained as a team was considerable. Many of the bits of knowledge we had to apply were things that were not available via Internet search, or if they were, lacked so much context that it was worse than useless.</p>
+<p>I certainly knew programmimg and so mant functuins like:</p>
+<code>
+        function greetMe(yourName) {
+            alert("Hello " + yourName);
+          }
+          greetMe("World");
+</code>
+<p>But was it enough? </p>
+</section>
+<section class="main-section" id="Doubt">
+<header>Doubt</header>
+<p> Everyone has self-doubt. I certainly did. Through much of the writing process, I constantly wondered to myself whether I should be the person writing this book. I am not on the CLR team; I work on a specialized project; I’m fairly young compared to the experts I look up to: who am *I* to be writing a book on .NET Performance? Et cetera.</p>
+<p>There is a fairly common psychological condition called <a href="https://en.wikipedia.org/wiki/Impostor_syndrome">Imposter Syndrome</a>, which explains these doubts. Basically, most people at one point or another feel like a fraud in their success.</p>
+<p>The fact is, I realized, that someone ought to have written a book like I was, and that someone might as well be me. As long as I got good editing, feedback, and technical help, there was no reason I could not produce a very high-quality textbook on .NET performance, despite my worries.
+</p>
+        <p>So I pressed ahead.</p>
+        <p>Another doubt was the scope of the book. My knowledge is heavily weighted towards vanilla servers, pure-.NET. No WCF, ASP.Net, WPF, etc. I am familiar with those, but they’re not my bread-and-butter, so to speak. But were functions like this good enough?</p>
+<code>
+        if (condition) {
+            statement_1;
+          } else {
+            statement_2;
+          }
+
+</code>
+<code>
+        if (condition) {
+            statement_1_runs_if_condition_is_true;
+            statement_2_runs_if_condition_is_true;
+          } else {
+            statement_3_runs_if_condition_is_false;
+            statement_4_runs_if_condition_is_false;
+          }
+
+</code>
+
+</section>
+<section class="main-section" id="Writing">
+<header>Writing</header>
+<p>The hardest part of any large project is just getting started. The first thing I did was flesh out my draft outline to list all of the chapters I thought I would have, then within those chapters, individual topics.</p>
+<p>Then I just started writing. I don’t remember if I started with the Introduction or Chapter 1, but I did start more-or-less at the beginning. At the start, I did not concern myself with grammatical correctness, precise descriptions, or even necessarily getting all the details I wanted. I just tried to get all of the ideas onto the page. As I thought of related ideas, I would write them into my outline, or later in the document itself with a TODO prefix and an explanation of what I was thinking.</p>
+<p>I pretty much wrote the whole book linearly like this. Not perfectly, of course. I jumped around a bit as necessary. Sometimes, sections belonged in a different order, or in a different chapter entirely. When I got to a part where I knew I needed a code sample, sometimes I just wouldn’t be in the mood to work on code or the debugger, so I would put a TODO in the chapter with an explanation of what the code needed to do. Then I moved onto writing something else.</p>
+<p>Resist the urge to pad your text. This is really easy to do in a programming text. Just throw some more code on the page, add some extra topics, and you can create pages out of thin air! Don’t do this! Yes, find good, relevant content that should be in your book, but only add it with the right motivation. It’s unlikely your outline will contain everything that needs to be in the book—you will certainly forget something. Do research, brainstorming, take a step away from the project, ask your technical editor what’s missing, etc. Add content for good reasons that fit the scope of your book and leave it at that.</p>
+
+</section>
+
+<section class="main-section" id="Editting">
+<header>Editting</header>
+<p>If you’re writing a book that is guaranteed to never be printed, then your primary concern with formatting should be how little of it you can get away with. Use one or two fonts. Use as few header styles as possible. There are plenty of formatting guides out there. One that I read and was very helpful was Mark Coker’s <a href="https://www.smashwords.com/books/view/52">Smashwords Style Guide</a>.</p>
+  <p>Editting for print is significantly more work. I wanted a number of things:</p>  
+  <ul>
+      <li>Bold, obvious styles for chapter titles, section headers, and more. Some of this includes underlining.</li>
+      <li> Different font and background shading for code samples.</li>
+      <li>Special callouts and borders for anecdotes and tips.</li>
+      <li>Page numbers, with alternating sides for even/odd.</li>
+      <li> Chapters always start on the right side (I had originally planned on some graphics that bled to the edge, but this would require a more expensive printing option, so I abandoned it)</li>
+      <li> Graphics with captions throughout the book.</li>
+      <li>etc</li>
+  </ul>
+<p>There are a lot more things I could have done. Take a look at another programming book and check out the advanced formatting and features they include. Most of it is unnecessary, but it can add a certain flair.</p>
+
+</section>
+<section class="main-section" id="Contact">
+<header>Contact</header>
+<p>If you have any questions about this whole process, please just check out Ben Watson's <a href="If you have any questions about this whole process, please just let me know either in the comments or on Twitter.
+">Writing High Performance.Net Code, 2nd Edition</a> </p>
+</section>
+</main>
+</div>
+</html>
